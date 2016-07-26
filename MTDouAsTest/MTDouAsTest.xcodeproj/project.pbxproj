@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		128A3BDDAB48FBA26E1114A7 /* libPods-MTDouAsTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21335F46723297C8F7A2680E /* libPods-MTDouAsTestTests.a */; };
+		7A82DAA5B027943E37BB322A /* libPods-MTDouAsTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A6100FD26BA0E0BBE91B62 /* libPods-MTDouAsTestUITests.a */; };
+		96BB6C0C205E69ADF867F99A /* libPods-MTDouAsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA4AF539E0D101D61A1B1DC /* libPods-MTDouAsTest.a */; };
+		DA5E5D101D33442F00EC0017 /* music_list.json in Resources */ = {isa = PBXBuildFile; fileRef = DA5E5D0F1D33442F00EC0017 /* music_list.json */; };
+		DAD1A1501D2E05FC00A1735D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A14F1D2E05FC00A1735D /* main.m */; };
+		DAD1A1531D2E05FC00A1735D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1521D2E05FC00A1735D /* AppDelegate.m */; };
+		DAD1A1561D2E05FC00A1735D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1551D2E05FC00A1735D /* ViewController.m */; };
+		DAD1A1591D2E05FC00A1735D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD1A1571D2E05FC00A1735D /* Main.storyboard */; };
+		DAD1A15B1D2E05FC00A1735D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD1A15A1D2E05FC00A1735D /* Assets.xcassets */; };
+		DAD1A15E1D2E05FC00A1735D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD1A15C1D2E05FC00A1735D /* LaunchScreen.storyboard */; };
+		DAD1A1691D2E05FC00A1735D /* MTDouAsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1681D2E05FC00A1735D /* MTDouAsTestTests.m */; };
+		DAD1A1741D2E05FC00A1735D /* MTDouAsTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1731D2E05FC00A1735D /* MTDouAsTestUITests.m */; };
+		DAD1A1AA1D2E06EA00A1735D /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1831D2E06EA00A1735D /* DOUAudioAnalyzer+Default.m */; };
+		DAD1A1AB1D2E06EA00A1735D /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1851D2E06EA00A1735D /* DOUAudioAnalyzer.m */; };
+		DAD1A1AC1D2E06EA00A1735D /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1891D2E06EA00A1735D /* DOUAudioDecoder.m */; };
+		DAD1A1AD1D2E06EA00A1735D /* DOUAudioEventLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A18B1D2E06EA00A1735D /* DOUAudioEventLoop.m */; };
+		DAD1A1AE1D2E06EA00A1735D /* DOUAudioFilePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A18E1D2E06EA00A1735D /* DOUAudioFilePreprocessor.m */; };
+		DAD1A1AF1D2E06EA00A1735D /* DOUAudioFileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1901D2E06EA00A1735D /* DOUAudioFileProvider.m */; };
+		DAD1A1B01D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1921D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.m */; };
+		DAD1A1B11D2E06EA00A1735D /* DOUAudioLPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1941D2E06EA00A1735D /* DOUAudioLPCM.m */; };
+		DAD1A1B21D2E06EA00A1735D /* DOUAudioPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1961D2E06EA00A1735D /* DOUAudioPlaybackItem.m */; };
+		DAD1A1B31D2E06EA00A1735D /* DOUAudioRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1981D2E06EA00A1735D /* DOUAudioRenderer.m */; };
+		DAD1A1B41D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A19A1D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.m */; };
+		DAD1A1B51D2E06EA00A1735D /* DOUAudioStreamer+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A19C1D2E06EA00A1735D /* DOUAudioStreamer+Options.m */; };
+		DAD1A1B61D2E06EA00A1735D /* DOUAudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A19E1D2E06EA00A1735D /* DOUAudioStreamer.m */; };
+		DAD1A1B71D2E06EA00A1735D /* DOUAudioVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1A11D2E06EA00A1735D /* DOUAudioVisualizer.m */; };
+		DAD1A1B81D2E06EA00A1735D /* DOUEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1A31D2E06EA00A1735D /* DOUEAGLView.m */; };
+		DAD1A1B91D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1A51D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.m */; };
+		DAD1A1BA1D2E06EA00A1735D /* DOUSimpleHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1A71D2E06EA00A1735D /* DOUSimpleHTTPRequest.m */; };
+		DAD1A1BB1D2E06EA00A1735D /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1A91D2E06EA00A1735D /* NSData+DOUMappedFile.m */; };
+		DAD1A1BD1D2E06F700A1735D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1BC1D2E06F700A1735D /* AVFoundation.framework */; };
+		DAD1A1BF1D2E070000A1735D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1BE1D2E070000A1735D /* Foundation.framework */; };
+		DAD1A1C31D2E072300A1735D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1C21D2E072300A1735D /* MediaPlayer.framework */; };
+		DAD1A1C51D2E072F00A1735D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1C41D2E072F00A1735D /* UIKit.framework */; };
+		DAD1A1C71D2E076400A1735D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1C61D2E076400A1735D /* OpenGLES.framework */; };
+		DAD1A1C91D2E078400A1735D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1C81D2E078400A1735D /* AudioToolbox.framework */; };
+		DAD1A1CB1D2E078E00A1735D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1CA1D2E078E00A1735D /* QuartzCore.framework */; };
+		DAD1A1CC1D2E079C00A1735D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1C01D2E070C00A1735D /* CoreGraphics.framework */; };
+		DAD1A1CE1D2E07A500A1735D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1CD1D2E07A500A1735D /* CFNetwork.framework */; };
+		DAD1A1D01D2E07B700A1735D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1CF1D2E07B700A1735D /* Accelerate.framework */; };
+		DAD1A1D21D2E07C200A1735D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD1A1D11D2E07C200A1735D /* MobileCoreServices.framework */; };
+		DAD1A1D61D2E087F00A1735D /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1A1D51D2E087F00A1735D /* PlayViewController.m */; };
+		DAF6C5C31D2E2D710015AF7A /* MusicQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF6C5C21D2E2D710015AF7A /* MusicQueue.m */; };
+		DAF6C5C61D2E33B90015AF7A /* MusicQueue+Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF6C5C51D2E33B90015AF7A /* MusicQueue+Provider.m */; };
+		DAFC19E91D3335D6003A8BB3 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFC19E81D3335D6003A8BB3 /* MusicListViewController.m */; };
+		DAFC19ED1D333736003A8BB3 /* MusicListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFC19EB1D333736003A8BB3 /* MusicListCellTableViewCell.m */; };
+		DAFC19EE1D333736003A8BB3 /* MusicListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFC19EC1D333736003A8BB3 /* MusicListCellTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAD1A1651D2E05FC00A1735D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD1A1431D2E05FC00A1735D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD1A14A1D2E05FC00A1735D;
+			remoteInfo = MTDouAsTest;
+		};
+		DAD1A1701D2E05FC00A1735D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD1A1431D2E05FC00A1735D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD1A14A1D2E05FC00A1735D;
+			remoteInfo = MTDouAsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F0B05A68DD623FC586C6C2C /* Pods-MTDouAsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTDouAsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTDouAsTest/Pods-MTDouAsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		21335F46723297C8F7A2680E /* libPods-MTDouAsTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTDouAsTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0847D03BD8E1A1A10765E7 /* Pods-MTDouAsTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTDouAsTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTDouAsTestUITests/Pods-MTDouAsTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CA4AF539E0D101D61A1B1DC /* libPods-MTDouAsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTDouAsTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAA897D7FB72A12D4EC5374 /* Pods-MTDouAsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTDouAsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTDouAsTest/Pods-MTDouAsTest.release.xcconfig"; sourceTree = "<group>"; };
+		B3A6100FD26BA0E0BBE91B62 /* libPods-MTDouAsTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTDouAsTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C987D430B33E26A5E05249EC /* Pods-MTDouAsTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTDouAsTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTDouAsTestTests/Pods-MTDouAsTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D14918DB5CA0A0FD3EED1E79 /* Pods-MTDouAsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTDouAsTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTDouAsTestTests/Pods-MTDouAsTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA5E5D0F1D33442F00EC0017 /* music_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = music_list.json; sourceTree = "<group>"; };
+		DAD1A14B1D2E05FC00A1735D /* MTDouAsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTDouAsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD1A14F1D2E05FC00A1735D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAD1A1511D2E05FC00A1735D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAD1A1521D2E05FC00A1735D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAD1A1541D2E05FC00A1735D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAD1A1551D2E05FC00A1735D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAD1A1581D2E05FC00A1735D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAD1A15A1D2E05FC00A1735D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAD1A15D1D2E05FC00A1735D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAD1A15F1D2E05FC00A1735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD1A1641D2E05FC00A1735D /* MTDouAsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDouAsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD1A1681D2E05FC00A1735D /* MTDouAsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDouAsTestTests.m; sourceTree = "<group>"; };
+		DAD1A16A1D2E05FC00A1735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD1A16F1D2E05FC00A1735D /* MTDouAsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDouAsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD1A1731D2E05FC00A1735D /* MTDouAsTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDouAsTestUITests.m; sourceTree = "<group>"; };
+		DAD1A1751D2E05FC00A1735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD1A1821D2E06EA00A1735D /* DOUAudioAnalyzer+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOUAudioAnalyzer+Default.h"; sourceTree = "<group>"; };
+		DAD1A1831D2E06EA00A1735D /* DOUAudioAnalyzer+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOUAudioAnalyzer+Default.m"; sourceTree = "<group>"; };
+		DAD1A1841D2E06EA00A1735D /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
+		DAD1A1851D2E06EA00A1735D /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioAnalyzer.m; sourceTree = "<group>"; };
+		DAD1A1861D2E06EA00A1735D /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
+		DAD1A1871D2E06EA00A1735D /* DOUAudioBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioBase.h; sourceTree = "<group>"; };
+		DAD1A1881D2E06EA00A1735D /* DOUAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioDecoder.h; sourceTree = "<group>"; };
+		DAD1A1891D2E06EA00A1735D /* DOUAudioDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioDecoder.m; sourceTree = "<group>"; };
+		DAD1A18A1D2E06EA00A1735D /* DOUAudioEventLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioEventLoop.h; sourceTree = "<group>"; };
+		DAD1A18B1D2E06EA00A1735D /* DOUAudioEventLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioEventLoop.m; sourceTree = "<group>"; };
+		DAD1A18C1D2E06EA00A1735D /* DOUAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFile.h; sourceTree = "<group>"; };
+		DAD1A18D1D2E06EA00A1735D /* DOUAudioFilePreprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFilePreprocessor.h; sourceTree = "<group>"; };
+		DAD1A18E1D2E06EA00A1735D /* DOUAudioFilePreprocessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioFilePreprocessor.m; sourceTree = "<group>"; };
+		DAD1A18F1D2E06EA00A1735D /* DOUAudioFileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFileProvider.h; sourceTree = "<group>"; };
+		DAD1A1901D2E06EA00A1735D /* DOUAudioFileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioFileProvider.m; sourceTree = "<group>"; };
+		DAD1A1911D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFrequencyAnalyzer.h; sourceTree = "<group>"; };
+		DAD1A1921D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioFrequencyAnalyzer.m; sourceTree = "<group>"; };
+		DAD1A1931D2E06EA00A1735D /* DOUAudioLPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioLPCM.h; sourceTree = "<group>"; };
+		DAD1A1941D2E06EA00A1735D /* DOUAudioLPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioLPCM.m; sourceTree = "<group>"; };
+		DAD1A1951D2E06EA00A1735D /* DOUAudioPlaybackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioPlaybackItem.h; sourceTree = "<group>"; };
+		DAD1A1961D2E06EA00A1735D /* DOUAudioPlaybackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioPlaybackItem.m; sourceTree = "<group>"; };
+		DAD1A1971D2E06EA00A1735D /* DOUAudioRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioRenderer.h; sourceTree = "<group>"; };
+		DAD1A1981D2E06EA00A1735D /* DOUAudioRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioRenderer.m; sourceTree = "<group>"; };
+		DAD1A1991D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioSpatialAnalyzer.h; sourceTree = "<group>"; };
+		DAD1A19A1D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioSpatialAnalyzer.m; sourceTree = "<group>"; };
+		DAD1A19B1D2E06EA00A1735D /* DOUAudioStreamer+Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOUAudioStreamer+Options.h"; sourceTree = "<group>"; };
+		DAD1A19C1D2E06EA00A1735D /* DOUAudioStreamer+Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOUAudioStreamer+Options.m"; sourceTree = "<group>"; };
+		DAD1A19D1D2E06EA00A1735D /* DOUAudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioStreamer.h; sourceTree = "<group>"; };
+		DAD1A19E1D2E06EA00A1735D /* DOUAudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioStreamer.m; sourceTree = "<group>"; };
+		DAD1A19F1D2E06EA00A1735D /* DOUAudioStreamer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioStreamer_Private.h; sourceTree = "<group>"; };
+		DAD1A1A01D2E06EA00A1735D /* DOUAudioVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioVisualizer.h; sourceTree = "<group>"; };
+		DAD1A1A11D2E06EA00A1735D /* DOUAudioVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioVisualizer.m; sourceTree = "<group>"; };
+		DAD1A1A21D2E06EA00A1735D /* DOUEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUEAGLView.h; sourceTree = "<group>"; };
+		DAD1A1A31D2E06EA00A1735D /* DOUEAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUEAGLView.m; sourceTree = "<group>"; };
+		DAD1A1A41D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUMPMediaLibraryAssetLoader.h; sourceTree = "<group>"; };
+		DAD1A1A51D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUMPMediaLibraryAssetLoader.m; sourceTree = "<group>"; };
+		DAD1A1A61D2E06EA00A1735D /* DOUSimpleHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUSimpleHTTPRequest.h; sourceTree = "<group>"; };
+		DAD1A1A71D2E06EA00A1735D /* DOUSimpleHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUSimpleHTTPRequest.m; sourceTree = "<group>"; };
+		DAD1A1A81D2E06EA00A1735D /* NSData+DOUMappedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DOUMappedFile.h"; sourceTree = "<group>"; };
+		DAD1A1A91D2E06EA00A1735D /* NSData+DOUMappedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DOUMappedFile.m"; sourceTree = "<group>"; };
+		DAD1A1BC1D2E06F700A1735D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DAD1A1BE1D2E070000A1735D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAD1A1C01D2E070C00A1735D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAD1A1C21D2E072300A1735D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DAD1A1C41D2E072F00A1735D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAD1A1C61D2E076400A1735D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DAD1A1C81D2E078400A1735D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DAD1A1CA1D2E078E00A1735D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DAD1A1CD1D2E07A500A1735D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DAD1A1CF1D2E07B700A1735D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DAD1A1D11D2E07C200A1735D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DAD1A1D41D2E087F00A1735D /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		DAD1A1D51D2E087F00A1735D /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		DAF6C5C11D2E2D710015AF7A /* MusicQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicQueue.h; sourceTree = "<group>"; };
+		DAF6C5C21D2E2D710015AF7A /* MusicQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicQueue.m; sourceTree = "<group>"; };
+		DAF6C5C41D2E33B90015AF7A /* MusicQueue+Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MusicQueue+Provider.h"; sourceTree = "<group>"; };
+		DAF6C5C51D2E33B90015AF7A /* MusicQueue+Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MusicQueue+Provider.m"; sourceTree = "<group>"; };
+		DAFC19E71D3335D6003A8BB3 /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		DAFC19E81D3335D6003A8BB3 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		DAFC19EA1D333736003A8BB3 /* MusicListCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListCellTableViewCell.h; sourceTree = "<group>"; };
+		DAFC19EB1D333736003A8BB3 /* MusicListCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListCellTableViewCell.m; sourceTree = "<group>"; };
+		DAFC19EC1D333736003A8BB3 /* MusicListCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicListCellTableViewCell.xib; sourceTree = "<group>"; };
+		E7A61E8BE6D06ECFF2C9ACDE /* Pods-MTDouAsTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTDouAsTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTDouAsTestUITests/Pods-MTDouAsTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD1A1481D2E05FC00A1735D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD1A1D21D2E07C200A1735D /* MobileCoreServices.framework in Frameworks */,
+				DAD1A1D01D2E07B700A1735D /* Accelerate.framework in Frameworks */,
+				DAD1A1CE1D2E07A500A1735D /* CFNetwork.framework in Frameworks */,
+				DAD1A1CC1D2E079C00A1735D /* CoreGraphics.framework in Frameworks */,
+				DAD1A1CB1D2E078E00A1735D /* QuartzCore.framework in Frameworks */,
+				DAD1A1C91D2E078400A1735D /* AudioToolbox.framework in Frameworks */,
+				DAD1A1C71D2E076400A1735D /* OpenGLES.framework in Frameworks */,
+				DAD1A1C51D2E072F00A1735D /* UIKit.framework in Frameworks */,
+				DAD1A1C31D2E072300A1735D /* MediaPlayer.framework in Frameworks */,
+				DAD1A1BF1D2E070000A1735D /* Foundation.framework in Frameworks */,
+				DAD1A1BD1D2E06F700A1735D /* AVFoundation.framework in Frameworks */,
+				96BB6C0C205E69ADF867F99A /* libPods-MTDouAsTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD1A1611D2E05FC00A1735D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128A3BDDAB48FBA26E1114A7 /* libPods-MTDouAsTestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD1A16C1D2E05FC00A1735D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A82DAA5B027943E37BB322A /* libPods-MTDouAsTestUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D32A910E66F9723A68FF26C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CA4AF539E0D101D61A1B1DC /* libPods-MTDouAsTest.a */,
+				21335F46723297C8F7A2680E /* libPods-MTDouAsTestTests.a */,
+				B3A6100FD26BA0E0BBE91B62 /* libPods-MTDouAsTestUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD1A1421D2E05FC00A1735D = {
+			isa = PBXGroup;
+			children = (
+				DAD1A1D31D2E083200A1735D /* FrameWorks */,
+				DAD1A14D1D2E05FC00A1735D /* MTDouAsTest */,
+				DAD1A1671D2E05FC00A1735D /* MTDouAsTestTests */,
+				DAD1A1721D2E05FC00A1735D /* MTDouAsTestUITests */,
+				DAD1A14C1D2E05FC00A1735D /* Products */,
+				EA6C0AE405772FDADDA7EDDF /* Pods */,
+				D32A910E66F9723A68FF26C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAD1A14C1D2E05FC00A1735D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A14B1D2E05FC00A1735D /* MTDouAsTest.app */,
+				DAD1A1641D2E05FC00A1735D /* MTDouAsTestTests.xctest */,
+				DAD1A16F1D2E05FC00A1735D /* MTDouAsTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD1A14D1D2E05FC00A1735D /* MTDouAsTest */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A1811D2E06EA00A1735D /* src */,
+				DAD1A1511D2E05FC00A1735D /* AppDelegate.h */,
+				DAD1A1521D2E05FC00A1735D /* AppDelegate.m */,
+				DAF6C5C11D2E2D710015AF7A /* MusicQueue.h */,
+				DAF6C5C21D2E2D710015AF7A /* MusicQueue.m */,
+				DAF6C5C41D2E33B90015AF7A /* MusicQueue+Provider.h */,
+				DAF6C5C51D2E33B90015AF7A /* MusicQueue+Provider.m */,
+				DAD1A1541D2E05FC00A1735D /* ViewController.h */,
+				DAD1A1551D2E05FC00A1735D /* ViewController.m */,
+				DAD1A1D41D2E087F00A1735D /* PlayViewController.h */,
+				DAD1A1D51D2E087F00A1735D /* PlayViewController.m */,
+				DAFC19E71D3335D6003A8BB3 /* MusicListViewController.h */,
+				DAFC19E81D3335D6003A8BB3 /* MusicListViewController.m */,
+				DAFC19EA1D333736003A8BB3 /* MusicListCellTableViewCell.h */,
+				DAFC19EB1D333736003A8BB3 /* MusicListCellTableViewCell.m */,
+				DAFC19EC1D333736003A8BB3 /* MusicListCellTableViewCell.xib */,
+				DA5E5D0F1D33442F00EC0017 /* music_list.json */,
+				DAD1A1571D2E05FC00A1735D /* Main.storyboard */,
+				DAD1A15A1D2E05FC00A1735D /* Assets.xcassets */,
+				DAD1A15C1D2E05FC00A1735D /* LaunchScreen.storyboard */,
+				DAD1A15F1D2E05FC00A1735D /* Info.plist */,
+				DAD1A14E1D2E05FC00A1735D /* Supporting Files */,
+			);
+			path = MTDouAsTest;
+			sourceTree = "<group>";
+		};
+		DAD1A14E1D2E05FC00A1735D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A14F1D2E05FC00A1735D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD1A1671D2E05FC00A1735D /* MTDouAsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A1681D2E05FC00A1735D /* MTDouAsTestTests.m */,
+				DAD1A16A1D2E05FC00A1735D /* Info.plist */,
+			);
+			path = MTDouAsTestTests;
+			sourceTree = "<group>";
+		};
+		DAD1A1721D2E05FC00A1735D /* MTDouAsTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A1731D2E05FC00A1735D /* MTDouAsTestUITests.m */,
+				DAD1A1751D2E05FC00A1735D /* Info.plist */,
+			);
+			path = MTDouAsTestUITests;
+			sourceTree = "<group>";
+		};
+		DAD1A1811D2E06EA00A1735D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A1821D2E06EA00A1735D /* DOUAudioAnalyzer+Default.h */,
+				DAD1A1831D2E06EA00A1735D /* DOUAudioAnalyzer+Default.m */,
+				DAD1A1841D2E06EA00A1735D /* DOUAudioAnalyzer.h */,
+				DAD1A1851D2E06EA00A1735D /* DOUAudioAnalyzer.m */,
+				DAD1A1861D2E06EA00A1735D /* DOUAudioAnalyzer_Private.h */,
+				DAD1A1871D2E06EA00A1735D /* DOUAudioBase.h */,
+				DAD1A1881D2E06EA00A1735D /* DOUAudioDecoder.h */,
+				DAD1A1891D2E06EA00A1735D /* DOUAudioDecoder.m */,
+				DAD1A18A1D2E06EA00A1735D /* DOUAudioEventLoop.h */,
+				DAD1A18B1D2E06EA00A1735D /* DOUAudioEventLoop.m */,
+				DAD1A18C1D2E06EA00A1735D /* DOUAudioFile.h */,
+				DAD1A18D1D2E06EA00A1735D /* DOUAudioFilePreprocessor.h */,
+				DAD1A18E1D2E06EA00A1735D /* DOUAudioFilePreprocessor.m */,
+				DAD1A18F1D2E06EA00A1735D /* DOUAudioFileProvider.h */,
+				DAD1A1901D2E06EA00A1735D /* DOUAudioFileProvider.m */,
+				DAD1A1911D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.h */,
+				DAD1A1921D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.m */,
+				DAD1A1931D2E06EA00A1735D /* DOUAudioLPCM.h */,
+				DAD1A1941D2E06EA00A1735D /* DOUAudioLPCM.m */,
+				DAD1A1951D2E06EA00A1735D /* DOUAudioPlaybackItem.h */,
+				DAD1A1961D2E06EA00A1735D /* DOUAudioPlaybackItem.m */,
+				DAD1A1971D2E06EA00A1735D /* DOUAudioRenderer.h */,
+				DAD1A1981D2E06EA00A1735D /* DOUAudioRenderer.m */,
+				DAD1A1991D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.h */,
+				DAD1A19A1D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.m */,
+				DAD1A19B1D2E06EA00A1735D /* DOUAudioStreamer+Options.h */,
+				DAD1A19C1D2E06EA00A1735D /* DOUAudioStreamer+Options.m */,
+				DAD1A19D1D2E06EA00A1735D /* DOUAudioStreamer.h */,
+				DAD1A19E1D2E06EA00A1735D /* DOUAudioStreamer.m */,
+				DAD1A19F1D2E06EA00A1735D /* DOUAudioStreamer_Private.h */,
+				DAD1A1A01D2E06EA00A1735D /* DOUAudioVisualizer.h */,
+				DAD1A1A11D2E06EA00A1735D /* DOUAudioVisualizer.m */,
+				DAD1A1A21D2E06EA00A1735D /* DOUEAGLView.h */,
+				DAD1A1A31D2E06EA00A1735D /* DOUEAGLView.m */,
+				DAD1A1A41D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.h */,
+				DAD1A1A51D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.m */,
+				DAD1A1A61D2E06EA00A1735D /* DOUSimpleHTTPRequest.h */,
+				DAD1A1A71D2E06EA00A1735D /* DOUSimpleHTTPRequest.m */,
+				DAD1A1A81D2E06EA00A1735D /* NSData+DOUMappedFile.h */,
+				DAD1A1A91D2E06EA00A1735D /* NSData+DOUMappedFile.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DAD1A1D31D2E083200A1735D /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1A1D11D2E07C200A1735D /* MobileCoreServices.framework */,
+				DAD1A1CF1D2E07B700A1735D /* Accelerate.framework */,
+				DAD1A1CD1D2E07A500A1735D /* CFNetwork.framework */,
+				DAD1A1CA1D2E078E00A1735D /* QuartzCore.framework */,
+				DAD1A1C81D2E078400A1735D /* AudioToolbox.framework */,
+				DAD1A1C61D2E076400A1735D /* OpenGLES.framework */,
+				DAD1A1C41D2E072F00A1735D /* UIKit.framework */,
+				DAD1A1C21D2E072300A1735D /* MediaPlayer.framework */,
+				DAD1A1C01D2E070C00A1735D /* CoreGraphics.framework */,
+				DAD1A1BE1D2E070000A1735D /* Foundation.framework */,
+				DAD1A1BC1D2E06F700A1735D /* AVFoundation.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		EA6C0AE405772FDADDA7EDDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F0B05A68DD623FC586C6C2C /* Pods-MTDouAsTest.debug.xcconfig */,
+				8DAA897D7FB72A12D4EC5374 /* Pods-MTDouAsTest.release.xcconfig */,
+				C987D430B33E26A5E05249EC /* Pods-MTDouAsTestTests.debug.xcconfig */,
+				D14918DB5CA0A0FD3EED1E79 /* Pods-MTDouAsTestTests.release.xcconfig */,
+				3F0847D03BD8E1A1A10765E7 /* Pods-MTDouAsTestUITests.debug.xcconfig */,
+				E7A61E8BE6D06ECFF2C9ACDE /* Pods-MTDouAsTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD1A14A1D2E05FC00A1735D /* MTDouAsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD1A1781D2E05FC00A1735D /* Build configuration list for PBXNativeTarget "MTDouAsTest" */;
+			buildPhases = (
+				853A9FFC7D570608F759693D /* [CP] Check Pods Manifest.lock */,
+				DAD1A1471D2E05FC00A1735D /* Sources */,
+				DAD1A1481D2E05FC00A1735D /* Frameworks */,
+				DAD1A1491D2E05FC00A1735D /* Resources */,
+				6EE68E2F0B5B10C0909BB15C /* [CP] Embed Pods Frameworks */,
+				5C714EE4E57A37E17E7A7B8E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTDouAsTest;
+			productName = MTDouAsTest;
+			productReference = DAD1A14B1D2E05FC00A1735D /* MTDouAsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAD1A1631D2E05FC00A1735D /* MTDouAsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD1A17B1D2E05FC00A1735D /* Build configuration list for PBXNativeTarget "MTDouAsTestTests" */;
+			buildPhases = (
+				2E8D576A8C7719C0C2BBDE6A /* [CP] Check Pods Manifest.lock */,
+				DAD1A1601D2E05FC00A1735D /* Sources */,
+				DAD1A1611D2E05FC00A1735D /* Frameworks */,
+				DAD1A1621D2E05FC00A1735D /* Resources */,
+				3F2F7AE631EB8AA3CD6CECE7 /* [CP] Embed Pods Frameworks */,
+				7820879CCB7098A5D1730DA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD1A1661D2E05FC00A1735D /* PBXTargetDependency */,
+			);
+			name = MTDouAsTestTests;
+			productName = MTDouAsTestTests;
+			productReference = DAD1A1641D2E05FC00A1735D /* MTDouAsTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAD1A16E1D2E05FC00A1735D /* MTDouAsTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD1A17E1D2E05FC00A1735D /* Build configuration list for PBXNativeTarget "MTDouAsTestUITests" */;
+			buildPhases = (
+				92E925D90DCE89A0BA6B6A98 /* [CP] Check Pods Manifest.lock */,
+				DAD1A16B1D2E05FC00A1735D /* Sources */,
+				DAD1A16C1D2E05FC00A1735D /* Frameworks */,
+				DAD1A16D1D2E05FC00A1735D /* Resources */,
+				6D4730811A108D2294218FCC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD1A1711D2E05FC00A1735D /* PBXTargetDependency */,
+			);
+			name = MTDouAsTestUITests;
+			productName = MTDouAsTestUITests;
+			productReference = DAD1A16F1D2E05FC00A1735D /* MTDouAsTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAD1A1431D2E05FC00A1735D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = meitu_wxd;
+				TargetAttributes = {
+					DAD1A14A1D2E05FC00A1735D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 44XUQU34E7;
+					};
+					DAD1A1631D2E05FC00A1735D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DAD1A14A1D2E05FC00A1735D;
+					};
+					DAD1A16E1D2E05FC00A1735D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DAD1A14A1D2E05FC00A1735D;
+					};
+				};
+			};
+			buildConfigurationList = DAD1A1461D2E05FC00A1735D /* Build configuration list for PBXProject "MTDouAsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAD1A1421D2E05FC00A1735D;
+			productRefGroup = DAD1A14C1D2E05FC00A1735D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAD1A14A1D2E05FC00A1735D /* MTDouAsTest */,
+				DAD1A1631D2E05FC00A1735D /* MTDouAsTestTests */,
+				DAD1A16E1D2E05FC00A1735D /* MTDouAsTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAD1A1491D2E05FC00A1735D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5E5D101D33442F00EC0017 /* music_list.json in Resources */,
+				DAD1A15E1D2E05FC00A1735D /* LaunchScreen.storyboard in Resources */,
+				DAD1A15B1D2E05FC00A1735D /* Assets.xcassets in Resources */,
+				DAD1A1591D2E05FC00A1735D /* Main.storyboard in Resources */,
+				DAFC19EE1D333736003A8BB3 /* MusicListCellTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD1A1621D2E05FC00A1735D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD1A16D1D2E05FC00A1735D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E8D576A8C7719C0C2BBDE6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F2F7AE631EB8AA3CD6CECE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTDouAsTestTests/Pods-MTDouAsTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C714EE4E57A37E17E7A7B8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTDouAsTest/Pods-MTDouAsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D4730811A108D2294218FCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTDouAsTestUITests/Pods-MTDouAsTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EE68E2F0B5B10C0909BB15C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTDouAsTest/Pods-MTDouAsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7820879CCB7098A5D1730DA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MTDouAsTestTests/Pods-MTDouAsTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853A9FFC7D570608F759693D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92E925D90DCE89A0BA6B6A98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD1A1471D2E05FC00A1735D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD1A1B41D2E06EA00A1735D /* DOUAudioSpatialAnalyzer.m in Sources */,
+				DAD1A1B01D2E06EA00A1735D /* DOUAudioFrequencyAnalyzer.m in Sources */,
+				DAD1A1B71D2E06EA00A1735D /* DOUAudioVisualizer.m in Sources */,
+				DAD1A1561D2E05FC00A1735D /* ViewController.m in Sources */,
+				DAD1A1AB1D2E06EA00A1735D /* DOUAudioAnalyzer.m in Sources */,
+				DAD1A1AF1D2E06EA00A1735D /* DOUAudioFileProvider.m in Sources */,
+				DAD1A1B11D2E06EA00A1735D /* DOUAudioLPCM.m in Sources */,
+				DAD1A1B31D2E06EA00A1735D /* DOUAudioRenderer.m in Sources */,
+				DAFC19E91D3335D6003A8BB3 /* MusicListViewController.m in Sources */,
+				DAD1A1B21D2E06EA00A1735D /* DOUAudioPlaybackItem.m in Sources */,
+				DAD1A1B91D2E06EA00A1735D /* DOUMPMediaLibraryAssetLoader.m in Sources */,
+				DAD1A1AC1D2E06EA00A1735D /* DOUAudioDecoder.m in Sources */,
+				DAD1A1AA1D2E06EA00A1735D /* DOUAudioAnalyzer+Default.m in Sources */,
+				DAF6C5C31D2E2D710015AF7A /* MusicQueue.m in Sources */,
+				DAD1A1B61D2E06EA00A1735D /* DOUAudioStreamer.m in Sources */,
+				DAD1A1531D2E05FC00A1735D /* AppDelegate.m in Sources */,
+				DAD1A1B51D2E06EA00A1735D /* DOUAudioStreamer+Options.m in Sources */,
+				DAD1A1AD1D2E06EA00A1735D /* DOUAudioEventLoop.m in Sources */,
+				DAD1A1D61D2E087F00A1735D /* PlayViewController.m in Sources */,
+				DAD1A1BA1D2E06EA00A1735D /* DOUSimpleHTTPRequest.m in Sources */,
+				DAD1A1AE1D2E06EA00A1735D /* DOUAudioFilePreprocessor.m in Sources */,
+				DAFC19ED1D333736003A8BB3 /* MusicListCellTableViewCell.m in Sources */,
+				DAF6C5C61D2E33B90015AF7A /* MusicQueue+Provider.m in Sources */,
+				DAD1A1BB1D2E06EA00A1735D /* NSData+DOUMappedFile.m in Sources */,
+				DAD1A1B81D2E06EA00A1735D /* DOUEAGLView.m in Sources */,
+				DAD1A1501D2E05FC00A1735D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD1A1601D2E05FC00A1735D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD1A1691D2E05FC00A1735D /* MTDouAsTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD1A16B1D2E05FC00A1735D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD1A1741D2E05FC00A1735D /* MTDouAsTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAD1A1661D2E05FC00A1735D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD1A14A1D2E05FC00A1735D /* MTDouAsTest */;
+			targetProxy = DAD1A1651D2E05FC00A1735D /* PBXContainerItemProxy */;
+		};
+		DAD1A1711D2E05FC00A1735D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD1A14A1D2E05FC00A1735D /* MTDouAsTest */;
+			targetProxy = DAD1A1701D2E05FC00A1735D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAD1A1571D2E05FC00A1735D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD1A1581D2E05FC00A1735D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAD1A15C1D2E05FC00A1735D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAD1A15D1D2E05FC00A1735D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAD1A1761D2E05FC00A1735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAD1A1771D2E05FC00A1735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD1A1791D2E05FC00A1735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0B05A68DD623FC586C6C2C /* Pods-MTDouAsTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MTDouAsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.text.MTDouAsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		DAD1A17A1D2E05FC00A1735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DAA897D7FB72A12D4EC5374 /* Pods-MTDouAsTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MTDouAsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.text.MTDouAsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		DAD1A17C1D2E05FC00A1735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C987D430B33E26A5E05249EC /* Pods-MTDouAsTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MTDouAsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.text.MTDouAsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTDouAsTest.app/MTDouAsTest";
+			};
+			name = Debug;
+		};
+		DAD1A17D1D2E05FC00A1735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14918DB5CA0A0FD3EED1E79 /* Pods-MTDouAsTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MTDouAsTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.text.MTDouAsTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTDouAsTest.app/MTDouAsTest";
+			};
+			name = Release;
+		};
+		DAD1A17F1D2E05FC00A1735D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0847D03BD8E1A1A10765E7 /* Pods-MTDouAsTestUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MTDouAsTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.text.MTDouAsTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MTDouAsTest;
+			};
+			name = Debug;
+		};
+		DAD1A1801D2E05FC00A1735D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A61E8BE6D06ECFF2C9ACDE /* Pods-MTDouAsTestUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MTDouAsTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.text.MTDouAsTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MTDouAsTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAD1A1461D2E05FC00A1735D /* Build configuration list for PBXProject "MTDouAsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD1A1761D2E05FC00A1735D /* Debug */,
+				DAD1A1771D2E05FC00A1735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD1A1781D2E05FC00A1735D /* Build configuration list for PBXNativeTarget "MTDouAsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD1A1791D2E05FC00A1735D /* Debug */,
+				DAD1A17A1D2E05FC00A1735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD1A17B1D2E05FC00A1735D /* Build configuration list for PBXNativeTarget "MTDouAsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD1A17C1D2E05FC00A1735D /* Debug */,
+				DAD1A17D1D2E05FC00A1735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD1A17E1D2E05FC00A1735D /* Build configuration list for PBXNativeTarget "MTDouAsTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD1A17F1D2E05FC00A1735D /* Debug */,
+				DAD1A1801D2E05FC00A1735D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAD1A1431D2E05FC00A1735D /* Project object */;
+}
